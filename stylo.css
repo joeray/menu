@@ -49,7 +49,6 @@ body {
 	border: 2px solid #fff;
 	border-radius: 100%;
 	display: table;
-	background: linear-gradient(#FFF, #333);
 }
 .pricing_table .price {
 	font-size: 30px;
