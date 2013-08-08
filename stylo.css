@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Lets load up a Google Font*/
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+/*Basic Reset*/
+* {margin: 0; padding: 0;}
+
+/*Some fancy BG*/
+body {
+	background: url('http://thecodeplayer.com/uploads/media/bluebg.jpg') center center fixed;
+	background-size: cover;
+}
+
+.pricing_table {
+	width: 600px; 
+	color: #fff;
+	font-size: 12px;
+	font-family: Ubuntu, arial, verdana;
+	line-height: 150%;
+	text-align: center;
+	margin: 100px auto 0 auto;
+}
+/*Only the direct LI child, not the .features li*/
+.pricing_table>li {
+	background: linear-gradient(#666, #333);
+	width: 33.33%;
+	float: left;
+	list-style-type: none;
+	/*For smooth hover effects if .active is replaced by :hover*/
+	transition: all 0.2s;
+}
+.pricing_table>li.active {
+	background: linear-gradient(#F9B84A, #DB7224);
+	transform: scale(1.03);
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);
+}
+.pricing_table h3 {
+	text-transform: uppercase;
+	padding: 15px 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+.pricing_table .price_body {
+	width: 125px;
+	height: 125px;
+	margin: 0 auto 15px auto;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	display: table;
+	background: linear-gradient(#FFF, #333);
+}
+.pricing_table .price {
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	/*Lets vertically center align the price now*/
+	vertical-align: middle;
+	display: table-cell;
+}
+.pricing_table .price .price_figure {
+	display: block;
+}
+.pricing_table .price .price_term {
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.pricing_table .features li {
+	list-style-type: none;
+	padding: 5px 0;
+}
+
+.pricing_table .footer {
+	padding: 10px;
+	background: #333;
+	margin-top: 10px;
+}
+.pricing_table .footer .action_button{
+	color: #fff;
+	font-size: 11px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+	background: #000;
+	padding: 4px 20px;
+	border-radius: 35px;
+	background: linear-gradient(#FF0000, #333);
+}
+.pricing_table li.active .footer .action_button {
+	background: linear-gradient(#F9B84A, #DB7224);
+}
+
+.clr {clear: both;}
